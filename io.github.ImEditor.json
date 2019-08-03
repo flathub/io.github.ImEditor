@@ -47,16 +47,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/ImEditor/ImEditor",
-                    "tag": "0.9",
-                    "commit": "e547aa7027c6e03b392735bd1fb58fe2c081defd"
-                },
-                {
-                    "type": "patch",
-                    "path": "fix-appdata.patch"
-                },
-                {
-                    "type": "patch",
-                    "path": "use-file-chooser-native.patch"
+                    "tag": "0.9.1",
+                    "commit": "0bcf6f62821e28f52df4c7a8884f59599f887aa9"
                 }
             ]
         }
