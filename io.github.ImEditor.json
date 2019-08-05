@@ -49,6 +49,10 @@
                     "url": "https://github.com/ImEditor/ImEditor",
                     "tag": "0.9.2",
                     "commit": "28ee32ac6ce6fe2155d69a269aed3879e1fce3e3"
+                },
+                {
+                    "type": "patch",
+                    "path": "0001-Fix-translatations.patch"
                 }
             ]
         }
