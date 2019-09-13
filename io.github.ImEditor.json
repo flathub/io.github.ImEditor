@@ -38,6 +38,12 @@
                     "url": "https://github.com/ImEditor/ImEditor",
                     "tag": "0.9.3",
                     "commit": "67e20e7caed9942bbc7fda36f45942cdbdcd4ae7"
+                },
+                ,
+                {
+                    "type": "patch",
+                    "path": "0001-Finally-fix-20.patch"
+                }
                 }
             ]
         }
