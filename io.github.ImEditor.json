@@ -1,7 +1,7 @@
 {
     "app-id": "io.github.ImEditor",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "3.36",
+    "runtime-version": "3.38",
     "sdk": "org.gnome.Sdk",
     "command": "imeditor",
     "finish-args": [
@@ -12,19 +12,19 @@
     ],
     "modules": [
         {
-            "name": "python3-Pillow",
-            "buildsystem": "simple",
-            "build-commands": [
-                "pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} Pillow"
-            ],
-            "sources": [
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/c7/04/c91bb0e495c1e8a09633ecb061fab32e276ace7cefcef5d12334cdd14cd2/Pillow-7.1.1.tar.gz",
-                    "sha256": "0f89ddc77cf421b8cd34ae852309501458942bf370831b4a9b406156b599a14e"
-                }
-            ]
-        },
+	    "name": "python3-Pillow",
+	    "buildsystem": "simple",
+	    "build-commands": [
+		"pip3 install --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"Pillow==8.0.0\""
+	    ],
+	    "sources": [
+		{
+		    "type": "file",
+		    "url": "https://files.pythonhosted.org/packages/74/15/93be74c3124ad183ea3f25251a66d3c7f8641065537973c276e81f703a0b/Pillow-8.0.0.tar.gz",
+		    "sha256": "59304c67d12394815331eda95ec892bf54ad95e0aa7bc1ccd8e0a4a5a25d4bf3"
+		}
+	    ]
+	},
         {
             "name": "imeditor",
             "buildsystem": "meson",
@@ -32,8 +32,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/ImEditor/ImEditor",
-                    "tag": "0.9.4",
-                    "commit": "df4dc08dde9aa349b5a51fcbf793784163c15076"
+                    "tag": "0.9.5",
+                    "commit": "58ef7fe9ccd29d25af816a86a16ab207c1587176"
                 }
             ]
         }
